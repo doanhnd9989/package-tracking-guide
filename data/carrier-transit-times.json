@@ -1,0 +1,151 @@
+{
+  "source": "24hTrack (https://www.24htrack.com/carrier-statistics)",
+  "window": "2026-03-20 to 2026-08-19",
+  "methodology": "Statistics are computed from real packages tracked on the 24hTrack platform. Transit time = first carrier scan to delivery confirmation (outliers under 6 hours or over 90 days excluded). Delivery confirmation rate = share of shipments with an explicit delivered scan captured, counting only shipments first tracked at least 45 days ago; it reflects tracking data availability as well as carrier performance, and is omitted where event data is too sparse to be reliable. Carriers with fewer than 50 delivered packages are not shown.",
+  "carriers": [
+    {
+      "carrier": "TIPSA",
+      "medianTransitDays": 2.9,
+      "p80TransitDays": 7.3,
+      "avgTrackingEvents": 5.2
+    },
+    {
+      "carrier": "UPS",
+      "medianTransitDays": 4.0,
+      "p80TransitDays": 10.0,
+      "avgTrackingEvents": 4.8
+    },
+    {
+      "carrier": "Royal Mail",
+      "medianTransitDays": 4.2,
+      "p80TransitDays": 14.3,
+      "avgTrackingEvents": 4.4
+    },
+    {
+      "carrier": "Austrian Post",
+      "medianTransitDays": 5.4,
+      "p80TransitDays": 12.9,
+      "avgTrackingEvents": 8.1
+    },
+    {
+      "carrier": "DHL",
+      "medianTransitDays": 5.8,
+      "p80TransitDays": 11.1,
+      "avgTrackingEvents": 16.2
+    },
+    {
+      "carrier": "Cainiao",
+      "medianTransitDays": 7.2,
+      "p80TransitDays": 12.1,
+      "avgTrackingEvents": 18.1
+    },
+    {
+      "carrier": "Evri",
+      "medianTransitDays": 7.2,
+      "p80TransitDays": 13.1,
+      "avgTrackingEvents": 8.5
+    },
+    {
+      "carrier": "GOFO",
+      "medianTransitDays": 7.9,
+      "p80TransitDays": 12.9,
+      "avgTrackingEvents": 10.6
+    },
+    {
+      "carrier": "GoFo Express",
+      "medianTransitDays": 8.4,
+      "p80TransitDays": 16.4,
+      "avgTrackingEvents": 15.9
+    },
+    {
+      "carrier": "GLY",
+      "medianTransitDays": 9.1,
+      "p80TransitDays": 12.2,
+      "avgTrackingEvents": 20.2
+    },
+    {
+      "carrier": "USPS",
+      "medianTransitDays": 9.4,
+      "p80TransitDays": 12.7,
+      "avgTrackingEvents": 10.2
+    },
+    {
+      "carrier": "China Post",
+      "medianTransitDays": 11.0,
+      "p80TransitDays": 17.8,
+      "avgTrackingEvents": 21.6
+    },
+    {
+      "carrier": "UniUni",
+      "medianTransitDays": 11.0,
+      "p80TransitDays": 17.5,
+      "avgTrackingEvents": 7.2
+    },
+    {
+      "carrier": "SPT",
+      "medianTransitDays": 11.9,
+      "p80TransitDays": 15.9,
+      "avgTrackingEvents": 16.6
+    },
+    {
+      "carrier": "CTT Express",
+      "medianTransitDays": 12.0,
+      "p80TransitDays": 16.6,
+      "avgTrackingEvents": 2.9
+    },
+    {
+      "carrier": "AliExpress",
+      "medianTransitDays": 12.4,
+      "p80TransitDays": 16.3,
+      "avgTrackingEvents": 17.4
+    },
+    {
+      "carrier": "Yanwen Express",
+      "medianTransitDays": 12.9,
+      "p80TransitDays": 29.3,
+      "avgTrackingEvents": 18.8
+    },
+    {
+      "carrier": "YFH",
+      "medianTransitDays": 13.0,
+      "p80TransitDays": 16.4,
+      "avgTrackingEvents": 17.3
+    },
+    {
+      "carrier": "YunExpress",
+      "medianTransitDays": 13.3,
+      "p80TransitDays": 19.0,
+      "avgTrackingEvents": 15.4
+    },
+    {
+      "carrier": "1ST",
+      "medianTransitDays": 16.7,
+      "p80TransitDays": 17.7,
+      "avgTrackingEvents": 19.3
+    },
+    {
+      "carrier": "ShopLine",
+      "medianTransitDays": 16.7,
+      "p80TransitDays": 23.6,
+      "avgTrackingEvents": 18.1
+    },
+    {
+      "carrier": "FXYL",
+      "medianTransitDays": 22.8,
+      "p80TransitDays": 26.8,
+      "avgTrackingEvents": 10.8
+    },
+    {
+      "carrier": "DZTGJ",
+      "medianTransitDays": 23.6,
+      "p80TransitDays": 23.8,
+      "avgTrackingEvents": 11.3
+    },
+    {
+      "carrier": "chengxiao",
+      "medianTransitDays": 29.8,
+      "p80TransitDays": 30.1,
+      "avgTrackingEvents": 7.4
+    }
+  ]
+}

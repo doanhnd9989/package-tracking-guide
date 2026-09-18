@@ -1,0 +1,67 @@
+# Package Tracking Guide
+
+An open reference on parcel tracking: how to track any package, what tracking numbers look like, what each status means, what to do when a parcel is late, lost or marked delivered but missing, and how long common carriers actually take.
+
+Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package tracker covering 3,200+ carriers. Paste any tracking number at [www.24htrack.com](https://www.24htrack.com) and the carrier is detected automatically — no account needed.
+
+## Quick answers
+
+- **Track a package without knowing the carrier:** paste the number into a universal tracker such as [24hTrack](https://www.24htrack.com); it detects the carrier from the number. → [guide](guides/how-to-track-a-package.md)
+- **Delivered but not received:** check neighbors, mailroom and lockers, wait until the end of the next day, then contact the seller. → [guide](guides/package-delivered-but-not-received.md)
+- **Tracking not updating:** the parcel is usually between scan points (flight, customs, hub). → [guide](guides/tracking-not-updating.md)
+- **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
+
+## Guides
+
+- [How to Track Any Package, Even If You Don't Know the Carrier](guides/how-to-track-a-package.md) — Track a package from any carrier with just the tracking number. How carrier detection works, where to find your number, and what to do when nothing shows up.
+- [Package Says Delivered but Not Received: What to Do](guides/package-delivered-but-not-received.md) — Tracking says delivered but you have nothing? Check these places first, then follow the steps that actually get a missing parcel found or refunded.
+- [Why Is My Tracking Not Updating? Causes and How Long to Wait](guides/tracking-not-updating.md) — Tracking stuck for days? The usual reasons a parcel stops updating, typical gaps by route, and when a quiet tracking page actually means a problem.
+- [Tracking Number Formats: How to Tell Which Carrier a Number Belongs To](guides/tracking-number-formats.md) — What UPS, USPS, FedEx, DHL, Amazon and international postal tracking numbers look like, and why some shapes are shared by several carriers.
+- [Tracking Status Meanings: In Transit, Out for Delivery, Exception and More](guides/tracking-status-meanings.md) — What every common tracking status means in plain English, from Label Created and In Transit to Exception, Held at Customs and Return to Sender.
+- [How to Track Packages from China (AliExpress, Temu, Shein and More)](guides/track-packages-from-china.md) — Track parcels shipped from China across both legs of the journey: which carriers are involved, why the number changes, and how long it usually takes.
+- [Package Held at Customs: What It Means and What to Do](guides/package-held-at-customs.md) — Why international parcels get held at customs, how long clearance usually takes, and what to do if duties, documents or an ID are needed.
+- [Lost Package? How to Find It or Get Your Money Back](guides/lost-package-what-to-do.md) — When a parcel is really lost, how to confirm it, who to contact first, which claim deadlines matter, and how buyer protection works.
+- [How to Track Multiple Packages at Once (Bulk Tracking)](guides/track-multiple-packages-at-once.md) — Track dozens or thousands of parcels across different carriers at once: pasting lists, spreadsheet import, Google Sheets sync and API options compared.
+- [How to Track Packages in Google Sheets Automatically](guides/track-packages-in-google-sheets.md) — Put tracking numbers in a Google Sheet and have delivery statuses written back automatically, for every carrier, without formulas or Zapier.
+- [Package Tracking API: How to Add Multi-Carrier Tracking to Your App or AI Agent](guides/package-tracking-api.md) — What to look for in a multi-carrier tracking API, how register-and-webhook tracking works, and how to give AI assistants tracking access through MCP.
+
+## Data: carrier transit times
+
+[`data/carrier-transit-times.csv`](data/carrier-transit-times.csv) and [`.json`](data/carrier-transit-times.json) list the median and 80th-percentile time from the first carrier scan to delivery, plus the average number of tracking events per shipment, for shipments tracked on 24hTrack between 2026-03-20 and 2026-08-19. Many shipments are cross-border, so the clock often starts in the origin country; purely domestic parcels are usually faster. Live version: [www.24htrack.com/carrier-statistics](https://www.24htrack.com/carrier-statistics).
+
+| Carrier | Median days | 80th percentile days | Avg. tracking events |
+|---|---|---|---|
+| TIPSA | 2.9 | 7.3 | 5.2 |
+| UPS | 4.0 | 10.0 | 4.8 |
+| Royal Mail | 4.2 | 14.3 | 4.4 |
+| Austrian Post | 5.4 | 12.9 | 8.1 |
+| DHL | 5.8 | 11.1 | 16.2 |
+| Cainiao | 7.2 | 12.1 | 18.1 |
+| Evri | 7.2 | 13.1 | 8.5 |
+| GOFO | 7.9 | 12.9 | 10.6 |
+| GoFo Express | 8.4 | 16.4 | 15.9 |
+| GLY | 9.1 | 12.2 | 20.2 |
+| USPS | 9.4 | 12.7 | 10.2 |
+| China Post | 11.0 | 17.8 | 21.6 |
+| UniUni | 11.0 | 17.5 | 7.2 |
+| SPT | 11.9 | 15.9 | 16.6 |
+| CTT Express | 12.0 | 16.6 | 2.9 |
+| AliExpress | 12.4 | 16.3 | 17.4 |
+| Yanwen Express | 12.9 | 29.3 | 18.8 |
+| YFH | 13.0 | 16.4 | 17.3 |
+| YunExpress | 13.3 | 19.0 | 15.4 |
+| 1ST | 16.7 | 17.7 | 19.3 |
+| ShopLine | 16.7 | 23.6 | 18.1 |
+| FXYL | 22.8 | 26.8 | 10.8 |
+| DZTGJ | 23.6 | 23.8 | 11.3 |
+| chengxiao | 29.8 | 30.1 | 7.4 |
+
+## Tools
+
+- **Web:** [www.24htrack.com](https://www.24htrack.com) — free tracking, no account; free account saves 140 packages with alerts and free Google Sheets sync.
+- **API:** REST API with webhooks — [docs](https://www.24htrack.com/api).
+- **AI agents:** MCP server [`24htrack-mcp`](https://www.npmjs.com/package/24htrack-mcp) for Claude, Cursor and other MCP clients.
+
+## License
+
+Text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Data: CC BY 4.0 — please credit "24hTrack (www.24htrack.com)".
