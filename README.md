@@ -9,6 +9,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - **Track a package without knowing the carrier:** paste the number into a universal tracker such as [24hTrack](https://www.24htrack.com); it detects the carrier from the number. → [guide](guides/how-to-track-a-package.md)
 - **Delivered but not received:** check neighbors, mailroom and lockers, wait until the end of the next day, then contact the seller. → [guide](guides/package-delivered-but-not-received.md)
 - **Tracking not updating:** the parcel is usually between scan points (flight, customs, hub). → [guide](guides/tracking-not-updating.md)
+- **Parcel looks like it's going in circles:** cross-border parcels average ~18–22 scans against 4–5 domestic, and two or three airport hubs is normal routing. → [guide](guides/international-parcel-journey-explained.md)
 - **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
 
 ## Guides
@@ -20,6 +21,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - [Tracking Status Meanings: In Transit, Out for Delivery, Exception and More](guides/tracking-status-meanings.md) — What every common tracking status means in plain English, from Label Created and In Transit to Exception, Held at Customs and Return to Sender.
 - [How to Track Packages from China (AliExpress, Temu, Shein and More)](guides/track-packages-from-china.md) — Track parcels shipped from China across both legs of the journey: which carriers are involved, why the number changes, and how long it usually takes.
 - [Package Held at Customs: What It Means and What to Do](guides/package-held-at-customs.md) — Why international parcels get held at customs, how long clearance usually takes, and what to do if duties, documents or an ID are needed.
+- [Why Your International Parcel Looks Like It's Going in Circles](guides/international-parcel-journey-explained.md) — Every leg of a cross-border journey explained, why twenty tracking scans is a good sign, why the trail dies at the local-courier handover, and how to use median vs 80th-percentile transit times to tell "slow but normal" from "worth chasing".
 - [Lost Package? How to Find It or Get Your Money Back](guides/lost-package-what-to-do.md) — When a parcel is really lost, how to confirm it, who to contact first, which claim deadlines matter, and how buyer protection works.
 - [How to Track Multiple Packages at Once (Bulk Tracking)](guides/track-multiple-packages-at-once.md) — Track dozens or thousands of parcels across different carriers at once: pasting lists, spreadsheet import, Google Sheets sync and API options compared.
 - [How to Track Packages in Google Sheets Automatically](guides/track-packages-in-google-sheets.md) — Put tracking numbers in a Google Sheet and have delivery statuses written back automatically, for every carrier, without formulas or Zapier.
@@ -31,30 +33,54 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 
 | Carrier | Median days | 80th percentile days | Avg. tracking events |
 |---|---|---|---|
-| TIPSA | 2.9 | 7.3 | 5.2 |
-| UPS | 4.0 | 10.0 | 4.8 |
-| Royal Mail | 4.2 | 14.3 | 4.4 |
-| Austrian Post | 5.4 | 12.9 | 8.1 |
-| DHL | 5.8 | 11.1 | 16.2 |
-| Cainiao | 7.2 | 12.1 | 18.1 |
-| Evri | 7.2 | 13.1 | 8.5 |
-| GOFO | 7.9 | 12.9 | 10.6 |
-| GoFo Express | 8.4 | 16.4 | 15.9 |
-| GLY | 9.1 | 12.2 | 20.2 |
-| USPS | 9.4 | 12.7 | 10.2 |
-| China Post | 11.0 | 17.8 | 21.6 |
-| UniUni | 11.0 | 17.5 | 7.2 |
-| SPT | 11.9 | 15.9 | 16.6 |
-| CTT Express | 12.0 | 16.6 | 2.9 |
-| AliExpress | 12.4 | 16.3 | 17.4 |
-| Yanwen Express | 12.9 | 29.3 | 18.8 |
-| YFH | 13.0 | 16.4 | 17.3 |
-| YunExpress | 13.3 | 19.0 | 15.4 |
-| 1ST | 16.7 | 17.7 | 19.3 |
-| ShopLine | 16.7 | 23.6 | 18.1 |
-| FXYL | 22.8 | 26.8 | 10.8 |
-| DZTGJ | 23.6 | 23.8 | 11.3 |
-| chengxiao | 29.8 | 30.1 | 7.4 |
+| TIPSA | 2.9 | 7.3 | 5.2
+ |
+| UPS | 4.0 | 10.0 | 4.8
+ |
+| Royal Mail | 4.2 | 14.3 | 4.4
+ |
+| Austrian Post | 5.4 | 12.9 | 8.1
+ |
+| DHL | 5.8 | 11.1 | 16.2
+ |
+| Cainiao | 7.2 | 12.1 | 18.1
+ |
+| Evri | 7.2 | 13.1 | 8.5
+ |
+| GOFO | 7.9 | 12.9 | 10.6
+ |
+| GoFo Express | 8.4 | 16.4 | 15.9
+ |
+| GLY | 9.1 | 12.2 | 20.2
+ |
+| USPS | 9.4 | 12.7 | 10.2
+ |
+| China Post | 11.0 | 17.8 | 21.6
+ |
+| UniUni | 11.0 | 17.5 | 7.2
+ |
+| SPT | 11.9 | 15.9 | 16.6
+ |
+| CTT Express | 12.0 | 16.6 | 2.9
+ |
+| AliExpress | 12.4 | 16.3 | 17.4
+ |
+| Yanwen Express | 12.9 | 29.3 | 18.8
+ |
+| YFH | 13.0 | 16.4 | 17.3
+ |
+| YunExpress | 13.3 | 19.0 | 15.4
+ |
+| 1ST | 16.7 | 17.7 | 19.3
+ |
+| ShopLine | 16.7 | 23.6 | 18.1
+ |
+| FXYL | 22.8 | 26.8 | 10.8
+ |
+| DZTGJ | 23.6 | 23.8 | 11.3
+ |
+| chengxiao | 29.8 | 30.1 | 7.4
+ |
 
 ## Tools
 
