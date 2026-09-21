@@ -10,6 +10,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - **Delivered but not received:** check neighbors, mailroom and lockers, wait until the end of the next day, then contact the seller. → [guide](guides/package-delivered-but-not-received.md)
 - **Tracking not updating:** the parcel is usually between scan points (flight, customs, hub). → [guide](guides/tracking-not-updating.md)
 - **Parcel looks like it's going in circles:** cross-border parcels average ~18–22 scans against 4–5 domestic, and two or three airport hubs is normal routing. → [guide](guides/international-parcel-journey-explained.md)
+- **Stuck on "Label Created" / "Info Received":** the carrier has the parcel's data, not the box; USPS median ~1 day to the first real scan, 80% within ~3 days. → [guide](guides/label-created-info-received.md)
 - **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
 
 ## Guides
@@ -19,6 +20,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - [Why Is My Tracking Not Updating? Causes and How Long to Wait](guides/tracking-not-updating.md) — Tracking stuck for days? The usual reasons a parcel stops updating, typical gaps by route, and when a quiet tracking page actually means a problem.
 - [Tracking Number Formats: How to Tell Which Carrier a Number Belongs To](guides/tracking-number-formats.md) — What UPS, USPS, FedEx, DHL, Amazon and international postal tracking numbers look like, and why some shapes are shared by several carriers.
 - [Tracking Status Meanings: In Transit, Out for Delivery, Exception and More](guides/tracking-status-meanings.md) — What every common tracking status means in plain English, from Label Created and In Transit to Exception, Held at Customs and Return to Sender.
+- ["Label Created" / "Info Received": What It Means and How Long It Lasts](guides/label-created-info-received.md) — Why a parcel sits on its first status, real label-to-first-scan times for USPS and a cross-border carrier, and when it is worth contacting the sender.
 - [How to Track Packages from China (AliExpress, Temu, Shein and More)](guides/track-packages-from-china.md) — Track parcels shipped from China across both legs of the journey: which carriers are involved, why the number changes, and how long it usually takes.
 - [Package Held at Customs: What It Means and What to Do](guides/package-held-at-customs.md) — Why international parcels get held at customs, how long clearance usually takes, and what to do if duties, documents or an ID are needed.
 - [Why Your International Parcel Looks Like It's Going in Circles](guides/international-parcel-journey-explained.md) — Every leg of a cross-border journey explained, why twenty tracking scans is a good sign, why the trail dies at the local-courier handover, and how to use median vs 80th-percentile transit times to tell "slow but normal" from "worth chasing".
