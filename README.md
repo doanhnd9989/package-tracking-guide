@@ -8,7 +8,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 
 - **Track a package without knowing the carrier:** paste the number into a universal tracker such as [24hTrack](https://www.24htrack.com); it detects the carrier from the number. → [guide](guides/how-to-track-a-package.md)
 - **Delivered but not received:** check neighbors, mailroom and lockers, wait until the end of the next day, then contact the seller. → [guide](guides/package-delivered-but-not-received.md)
-- **Tracking not updating:** the parcel is usually between scan points (flight, customs, hub). → [guide](guides/tracking-not-updating.md)
+- **Tracking not updating:** the parcel is usually between scan points (flight, customs, hub). Measured on parcels that were eventually delivered, the longest silent gap ran to a median of ~4 days and **more than 1 in 4 went a full week with no scan**. → [guide](guides/tracking-not-updating.md)
 - **Parcel looks like it's going in circles:** cross-border parcels average ~18–22 scans against 4–5 domestic, and two or three airport hubs is normal routing. → [guide](guides/international-parcel-journey-explained.md)
 - **Stuck on "Label Created" / "Info Received":** the carrier has the parcel's data, not the box; USPS median ~1 day to the first real scan, 80% within ~3 days. → [guide](guides/label-created-info-received.md)
 - **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
@@ -28,6 +28,10 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - [How to Track Multiple Packages at Once (Bulk Tracking)](guides/track-multiple-packages-at-once.md) — Track dozens or thousands of parcels across different carriers at once: pasting lists, spreadsheet import, Google Sheets sync and API options compared.
 - [How to Track Packages in Google Sheets Automatically](guides/track-packages-in-google-sheets.md) — Put tracking numbers in a Google Sheet and have delivery statuses written back automatically, for every carrier, without formulas or Zapier.
 - [Package Tracking API: How to Add Multi-Carrier Tracking to Your App or AI Agent](guides/package-tracking-api.md) — What to look for in a multi-carrier tracking API, how register-and-webhook tracking works, and how to give AI assistants tracking access through MCP.
+
+## Data: how long parcels go without a scan
+
+[`data/silent-gap-by-carrier.csv`](data/silent-gap-by-carrier.csv) / [`.json`](data/silent-gap-by-carrier.json) give the longest stretch with no carrier scan, measured per parcel on shipments that were eventually delivered and tracked on 24hTrack over a 120-day window ending 2026-09-23 — median and 90th percentile, overall and per carrier. Overall: median ~4.1 days, 90th percentile ~10.3 days; 58% of delivered parcels went 3+ days with no scan, 27% went a full week, 4% went two weeks. Percentiles and shares only. CC BY 4.0.
 
 ## Data: carrier transit times
 

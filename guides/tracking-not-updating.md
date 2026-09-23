@@ -16,6 +16,42 @@ Tracking stops updating when the parcel is between scan points: on a flight or s
 - Weekends and holidays: many hubs do not scan on Sundays or public holidays.
 - Label created, not shipped: the seller printed a label but has not handed the parcel over yet.
 
+## How long is normal? Measured, not guessed
+
+The honest way to answer "is this gap too long" is to look at parcels that *did* arrive and ask how quiet they went first. Across shipments tracked on 24hTrack over a 120-day window, taking the single longest stretch with no scan on each parcel that was eventually delivered:
+
+| Longest silent gap reached | Share of delivered parcels |
+|---|---|
+| 3 days or more | 58% |
+| 5 days or more | 44% |
+| 7 days or more (a full week) | 27% |
+| 10 days or more | 11% |
+| 14 days or more | 4% |
+
+Median: about 4 days. 90th percentile: about 10 days.
+
+Read that the other way round: **more than one in four parcels that arrived perfectly fine went a whole week with no tracking update.** A quiet page is the normal state of a parcel, not a warning.
+
+### By carrier
+
+Same measurement, split by carrier — the median longest silence on parcels that were delivered, and the value 9 out of 10 stayed under. Full dataset: [`data/silent-gap-by-carrier.csv`](../data/silent-gap-by-carrier.csv) ([JSON](../data/silent-gap-by-carrier.json)), CC BY 4.0.
+
+| Carrier | Median longest gap | 9 in 10 under |
+|---|---|---|
+| Rayspeed Asia | 1.0 days | 2.6 days |
+| FedEx | 2.1 days | 19.4 days |
+| Cainiao | 2.7 days | 9.9 days |
+| FXYL | 2.9 days | 4.1 days |
+| UPS | 3.0 days | 10.0 days |
+| Yanwen Express | 3.2 days | 10.1 days |
+| YunExpress | 3.5 days | 8.4 days |
+| China Post | 3.9 days | 9.5 days |
+| USPS | 4.6 days | 10.2 days |
+| UniUni | 6.3 days | 12.5 days |
+| CTT Express | 11.0 days | 17.8 days |
+
+These are tracking-visibility figures, not service quality: a carrier that scans a parcel at more points along the route shows shorter gaps even when the total journey is the same length. Shipments tracked on a tracking site also skew towards journeys that worried somebody, so treat them as a picture of what people look up rather than a carrier league table.
+
 ## How long is normal?
 
 On 24hTrack data for shipments tracked between March and August 2026, the median time from first scan to delivery was 4.0 days for UPS, 9.4 days for USPS, 11.0 days for China Post, 12.9 days for Yanwen Express and 13.3 days for YunExpress. These figures include many cross-border parcels whose first scan happens in the origin country, so a purely domestic parcel is usually faster. Long quiet gaps on China-to-US or China-to-Europe routes are therefore expected, while a domestic UPS parcel silent for a week is not.
