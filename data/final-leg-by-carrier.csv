@@ -1,0 +1,8 @@
+carrier,median_hours_last_scan_to_delivery,p80_hours_last_scan_to_delivery,p90_hours_last_scan_to_delivery,median_scans_per_shipment,sample_delivered_parcels
+USPS,5,8,10,7,305
+Yanwen Express,8,12,34,19,858
+China Post,8,46,84,18,2537
+Cainiao,8,31,91,18,437
+4PX,8,17,58,20,97
+FXYL,24,26,29,17,1032
+YunExpress,26,79,96,12,46

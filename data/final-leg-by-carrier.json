@@ -1,0 +1,64 @@
+{
+ "description": "Time from the last transit scan to the delivery scan, and scans published per shipment, measured on delivered parcels tracked on the 24hTrack platform over 120 days to 2026-09-24.",
+ "license": "CC BY 4.0",
+ "source": "https://www.24htrack.com",
+ "generated": "2026-09-24",
+ "rows": [
+  {
+   "carrier": "USPS",
+   "median_hours_last_scan_to_delivery": 5,
+   "p80_hours_last_scan_to_delivery": 8,
+   "p90_hours_last_scan_to_delivery": 10,
+   "median_scans_per_shipment": 7,
+   "sample_delivered_parcels": 305
+  },
+  {
+   "carrier": "Yanwen Express",
+   "median_hours_last_scan_to_delivery": 8,
+   "p80_hours_last_scan_to_delivery": 12,
+   "p90_hours_last_scan_to_delivery": 34,
+   "median_scans_per_shipment": 19,
+   "sample_delivered_parcels": 858
+  },
+  {
+   "carrier": "China Post",
+   "median_hours_last_scan_to_delivery": 8,
+   "p80_hours_last_scan_to_delivery": 46,
+   "p90_hours_last_scan_to_delivery": 84,
+   "median_scans_per_shipment": 18,
+   "sample_delivered_parcels": 2537
+  },
+  {
+   "carrier": "Cainiao",
+   "median_hours_last_scan_to_delivery": 8,
+   "p80_hours_last_scan_to_delivery": 31,
+   "p90_hours_last_scan_to_delivery": 91,
+   "median_scans_per_shipment": 18,
+   "sample_delivered_parcels": 437
+  },
+  {
+   "carrier": "4PX",
+   "median_hours_last_scan_to_delivery": 8,
+   "p80_hours_last_scan_to_delivery": 17,
+   "p90_hours_last_scan_to_delivery": 58,
+   "median_scans_per_shipment": 20,
+   "sample_delivered_parcels": 97
+  },
+  {
+   "carrier": "FXYL",
+   "median_hours_last_scan_to_delivery": 24,
+   "p80_hours_last_scan_to_delivery": 26,
+   "p90_hours_last_scan_to_delivery": 29,
+   "median_scans_per_shipment": 17,
+   "sample_delivered_parcels": 1032
+  },
+  {
+   "carrier": "YunExpress",
+   "median_hours_last_scan_to_delivery": 26,
+   "p80_hours_last_scan_to_delivery": 79,
+   "p90_hours_last_scan_to_delivery": 96,
+   "median_scans_per_shipment": 12,
+   "sample_delivered_parcels": 46
+  }
+ ]
+}

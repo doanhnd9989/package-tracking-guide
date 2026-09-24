@@ -11,6 +11,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - **Tracking not updating:** the parcel is usually between scan points (flight, customs, hub). Measured on parcels that were eventually delivered, the longest silent gap ran to a median of ~4 days and **more than 1 in 4 went a full week with no scan**. → [guide](guides/tracking-not-updating.md)
 - **Parcel looks like it's going in circles:** cross-border parcels average ~18–22 scans against 4–5 domestic, and two or three airport hubs is normal routing. → [guide](guides/international-parcel-journey-explained.md)
 - **Stuck on "Label Created" / "Info Received":** the carrier has the parcel's data, not the box; USPS median ~1 day to the first real scan, 80% within ~3 days. → [guide](guides/label-created-info-received.md)
+- **It arrived in my country — who delivers it now?** A local courier takes the last leg; the exporter's number usually keeps publishing its scans, and once the final transit scan appears, delivery follows within about 5–8 hours for most networks. → [guide](guides/parcel-arrived-in-your-country.md)
 - **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
 
 ## Guides
@@ -27,11 +28,16 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - [Lost Package? How to Find It or Get Your Money Back](guides/lost-package-what-to-do.md) — When a parcel is really lost, how to confirm it, who to contact first, which claim deadlines matter, and how buyer protection works.
 - [How to Track Multiple Packages at Once (Bulk Tracking)](guides/track-multiple-packages-at-once.md) — Track dozens or thousands of parcels across different carriers at once: pasting lists, spreadsheet import, Google Sheets sync and API options compared.
 - [How to Track Packages in Google Sheets Automatically](guides/track-packages-in-google-sheets.md) — Put tracking numbers in a Google Sheet and have delivery statuses written back automatically, for every carrier, without formulas or Zapier.
+- [Your Parcel Arrived in Your Country — Who Delivers It Now?](guides/parcel-arrived-in-your-country.md) — What "arrived at transit node, awaiting distribution" means, why one order has two tracking numbers with two different clocks, whether the original number keeps updating after the handover, and how long it takes from the last transit scan to your door.
 - [Package Tracking API: How to Add Multi-Carrier Tracking to Your App or AI Agent](guides/package-tracking-api.md) — What to look for in a multi-carrier tracking API, how register-and-webhook tracking works, and how to give AI assistants tracking access through MCP.
 
 ## Data: how long parcels go without a scan
 
 [`data/silent-gap-by-carrier.csv`](data/silent-gap-by-carrier.csv) / [`.json`](data/silent-gap-by-carrier.json) give the longest stretch with no carrier scan, measured per parcel on shipments that were eventually delivered and tracked on 24hTrack over a 120-day window ending 2026-09-23 — median and 90th percentile, overall and per carrier. Overall: median ~4.1 days, 90th percentile ~10.3 days; 58% of delivered parcels went 3+ days with no scan, 27% went a full week, 4% went two weeks. Percentiles and shares only. CC BY 4.0.
+
+## Data: the final leg
+
+[`data/final-leg-by-carrier.csv`](data/final-leg-by-carrier.csv) / [`.json`](data/final-leg-by-carrier.json) give the time from the **last transit scan to the delivery scan**, plus the median number of scans published per shipment, measured on delivered parcels tracked on 24hTrack over 120 days to 2026-09-24. Most of the waiting on an international order happens before that final scan, not after it: USPS runs a median of ~5 hours from it to the door, China Post, Cainiao and 4PX about 8 hours. The scan counts show the other half of the story — a cross-border number publishes a median of 17–20 events against about 7 for a domestic parcel, because it keeps reporting through the handover. Percentiles and medians only. CC BY 4.0.
 
 ## Data: carrier transit times
 
