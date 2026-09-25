@@ -1,0 +1,6 @@
+carrier,eventually_delivered_pct,attempt_scans_median,hours_to_delivery_median,hours_to_delivery_p80
+DHL,87,1,23,41
+USPS,88,1,23,50
+AliExpress,64,1,48,111
+China Post,61,1,71,145
+Cainiao,93,1,138,212

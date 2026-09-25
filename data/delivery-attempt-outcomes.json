@@ -1,0 +1,57 @@
+{
+  "description": "What happens after a 'delivery attempted' / failed-delivery scan: share of parcels that were still delivered, and how long the delivery took after that scan.",
+  "source": "Parcels tracked on the 24hTrack platform (www.24htrack.com). Only parcels whose first attempt scan is at least 14 days old are included, so the outcome is settled.",
+  "measured": "2026-09-25",
+  "license": "CC BY 4.0",
+  "notes": "Percentiles and shares only; no parcel counts by carrier. A carrier appears only if it had enough settled parcels to be meaningful.",
+  "overall": {
+    "eventually_delivered_pct": 82.2,
+    "attempt_scans_median": 1,
+    "share_two_or_more_attempt_scans_pct": 22,
+    "share_three_or_more_attempt_scans_pct": 9,
+    "hours_to_delivery_median": 26.6,
+    "hours_to_delivery_p80": 91.1,
+    "hours_to_delivery_p90": 169.5,
+    "delivered_within_24h_pct": 43.7,
+    "delivered_within_48h_pct": 65.5,
+    "delivered_within_72h_pct": 74.7,
+    "delivered_within_7d_pct": 89.2
+  },
+  "by_carrier": [
+    {
+      "carrier": "DHL",
+      "eventuallyDeliveredPct": 87,
+      "attemptScansMedian": 1,
+      "hoursToDeliveryMedian": 23,
+      "hoursToDeliveryP80": 41
+    },
+    {
+      "carrier": "USPS",
+      "eventuallyDeliveredPct": 88,
+      "attemptScansMedian": 1,
+      "hoursToDeliveryMedian": 23,
+      "hoursToDeliveryP80": 50
+    },
+    {
+      "carrier": "AliExpress",
+      "eventuallyDeliveredPct": 64,
+      "attemptScansMedian": 1,
+      "hoursToDeliveryMedian": 48,
+      "hoursToDeliveryP80": 111
+    },
+    {
+      "carrier": "China Post",
+      "eventuallyDeliveredPct": 61,
+      "attemptScansMedian": 1,
+      "hoursToDeliveryMedian": 71,
+      "hoursToDeliveryP80": 145
+    },
+    {
+      "carrier": "Cainiao",
+      "eventuallyDeliveredPct": 93,
+      "attemptScansMedian": 1,
+      "hoursToDeliveryMedian": 138,
+      "hoursToDeliveryP80": 212
+    }
+  ]
+}
