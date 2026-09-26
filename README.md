@@ -14,10 +14,12 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - **It arrived in my country — who delivers it now?** A local courier takes the last leg; the exporter's number usually keeps publishing its scans, and once the final transit scan appears, delivery follows within about 5–8 hours for most networks. → [guide](guides/parcel-arrived-in-your-country.md)
 - **"Delivery attempted" but you were home:** the scan records a parcel going back on the van, not a claim that you were out — the commonest recorded reason is no access to the building. **82% were delivered anyway**, 44% within 24 hours and 89% within a week. → [guide](guides/delivery-attempted-what-it-means.md)
 - **Amazon number starting TBA says "not found":** it is a reference issued inside Amazon's own network and tied to the order, not a public carrier barcode — about 96% of Amazon Shipping references take that form. Track it in Your Orders. → [guide](guides/amazon-tba-tracking-number.md)
+- **Who do I contact — seller, carrier or the tracking site?** The seller bought the shipping, so the contract and nearly every remedy sit with them; carriers usually will not open a claim for a recipient. → [guide](guides/who-to-contact-parcel-problem.md)
 - **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
 
 ## Guides
 
+- [Seller, carrier or tracking site: who actually fixes a parcel problem](guides/who-to-contact-parcel-problem.md)
 - [How to Track Any Package, Even If You Don't Know the Carrier](guides/how-to-track-a-package.md) — Track a package from any carrier with just the tracking number. How carrier detection works, where to find your number, and what to do when nothing shows up.
 - [Package Says Delivered but Not Received: What to Do](guides/package-delivered-but-not-received.md) — Tracking says delivered but you have nothing? Check these places first, then follow the steps that actually get a missing parcel found or refunded.
 - [Why Is My Tracking Not Updating? Causes and How Long to Wait](guides/tracking-not-updating.md) — Tracking stuck for days? The usual reasons a parcel stops updating, typical gaps by route, and when a quiet tracking page actually means a problem.
