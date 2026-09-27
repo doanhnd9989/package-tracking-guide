@@ -1,0 +1,20 @@
+carrier,median_hours_ofd_to_delivery,p90_hours_ofd_to_delivery,pct_still_out_after_24h,sample_delivered_parcels
+USPS,4.1,8.7,5,259
+Austrian Post,4.0,31.1,14,210
+Rayspeed Asia,4.5,16.3,7,236
+India Post,5.3,14.3,8,143
+AliExpress,5.7,43.3,17,258
+1ST,5.8,16.2,6,204
+YFH,5.8,34.9,14,279
+XINQICHENG,6.2,10.4,3,130
+UniUni,6.4,26.7,12,440
+Cainiao,7.0,42.5,15,218
+GOFO,7.0,16.3,5,481
+China Post,7.4,76.5,27,308
+Yanwen Express,7.6,58.2,20,1031
+SwiftX,7.7,28.5,12,290
+YFD,6.8,19.9,6,165
+SpeedX,8.2,49.7,18,148
+iMile,8.7,37.1,18,127
+DZTGJ,25.4,29.9,65,334
+ALL,6.5,32.9,16.7,9473

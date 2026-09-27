@@ -1,0 +1,141 @@
+{
+ "source": "24hTrack platform",
+ "measure": "hours from the first out-for-delivery scan to the delivery scan, delivered parcels only",
+ "window": "parcels delivered up to 2026-09-27",
+ "license": "CC BY 4.0",
+ "rows": [
+  {
+   "carrier": "USPS",
+   "median_hours_ofd_to_delivery": 4.1,
+   "p90_hours_ofd_to_delivery": 8.7,
+   "pct_still_out_after_24h": 5.0,
+   "sample_delivered_parcels": 259
+  },
+  {
+   "carrier": "Austrian Post",
+   "median_hours_ofd_to_delivery": 4.0,
+   "p90_hours_ofd_to_delivery": 31.1,
+   "pct_still_out_after_24h": 14.0,
+   "sample_delivered_parcels": 210
+  },
+  {
+   "carrier": "Rayspeed Asia",
+   "median_hours_ofd_to_delivery": 4.5,
+   "p90_hours_ofd_to_delivery": 16.3,
+   "pct_still_out_after_24h": 7.0,
+   "sample_delivered_parcels": 236
+  },
+  {
+   "carrier": "India Post",
+   "median_hours_ofd_to_delivery": 5.3,
+   "p90_hours_ofd_to_delivery": 14.3,
+   "pct_still_out_after_24h": 8.0,
+   "sample_delivered_parcels": 143
+  },
+  {
+   "carrier": "AliExpress",
+   "median_hours_ofd_to_delivery": 5.7,
+   "p90_hours_ofd_to_delivery": 43.3,
+   "pct_still_out_after_24h": 17.0,
+   "sample_delivered_parcels": 258
+  },
+  {
+   "carrier": "1ST",
+   "median_hours_ofd_to_delivery": 5.8,
+   "p90_hours_ofd_to_delivery": 16.2,
+   "pct_still_out_after_24h": 6.0,
+   "sample_delivered_parcels": 204
+  },
+  {
+   "carrier": "YFH",
+   "median_hours_ofd_to_delivery": 5.8,
+   "p90_hours_ofd_to_delivery": 34.9,
+   "pct_still_out_after_24h": 14.0,
+   "sample_delivered_parcels": 279
+  },
+  {
+   "carrier": "XINQICHENG",
+   "median_hours_ofd_to_delivery": 6.2,
+   "p90_hours_ofd_to_delivery": 10.4,
+   "pct_still_out_after_24h": 3.0,
+   "sample_delivered_parcels": 130
+  },
+  {
+   "carrier": "UniUni",
+   "median_hours_ofd_to_delivery": 6.4,
+   "p90_hours_ofd_to_delivery": 26.7,
+   "pct_still_out_after_24h": 12.0,
+   "sample_delivered_parcels": 440
+  },
+  {
+   "carrier": "Cainiao",
+   "median_hours_ofd_to_delivery": 7.0,
+   "p90_hours_ofd_to_delivery": 42.5,
+   "pct_still_out_after_24h": 15.0,
+   "sample_delivered_parcels": 218
+  },
+  {
+   "carrier": "GOFO",
+   "median_hours_ofd_to_delivery": 7.0,
+   "p90_hours_ofd_to_delivery": 16.3,
+   "pct_still_out_after_24h": 5.0,
+   "sample_delivered_parcels": 481
+  },
+  {
+   "carrier": "China Post",
+   "median_hours_ofd_to_delivery": 7.4,
+   "p90_hours_ofd_to_delivery": 76.5,
+   "pct_still_out_after_24h": 27.0,
+   "sample_delivered_parcels": 308
+  },
+  {
+   "carrier": "Yanwen Express",
+   "median_hours_ofd_to_delivery": 7.6,
+   "p90_hours_ofd_to_delivery": 58.2,
+   "pct_still_out_after_24h": 20.0,
+   "sample_delivered_parcels": 1031
+  },
+  {
+   "carrier": "SwiftX",
+   "median_hours_ofd_to_delivery": 7.7,
+   "p90_hours_ofd_to_delivery": 28.5,
+   "pct_still_out_after_24h": 12.0,
+   "sample_delivered_parcels": 290
+  },
+  {
+   "carrier": "YFD",
+   "median_hours_ofd_to_delivery": 6.8,
+   "p90_hours_ofd_to_delivery": 19.9,
+   "pct_still_out_after_24h": 6.0,
+   "sample_delivered_parcels": 165
+  },
+  {
+   "carrier": "SpeedX",
+   "median_hours_ofd_to_delivery": 8.2,
+   "p90_hours_ofd_to_delivery": 49.7,
+   "pct_still_out_after_24h": 18.0,
+   "sample_delivered_parcels": 148
+  },
+  {
+   "carrier": "iMile",
+   "median_hours_ofd_to_delivery": 8.7,
+   "p90_hours_ofd_to_delivery": 37.1,
+   "pct_still_out_after_24h": 18.0,
+   "sample_delivered_parcels": 127
+  },
+  {
+   "carrier": "DZTGJ",
+   "median_hours_ofd_to_delivery": 25.4,
+   "p90_hours_ofd_to_delivery": 29.9,
+   "pct_still_out_after_24h": 65.0,
+   "sample_delivered_parcels": 334
+  },
+  {
+   "carrier": "ALL",
+   "median_hours_ofd_to_delivery": 6.5,
+   "p90_hours_ofd_to_delivery": 32.9,
+   "pct_still_out_after_24h": 16.7,
+   "sample_delivered_parcels": 9473
+  }
+ ]
+}

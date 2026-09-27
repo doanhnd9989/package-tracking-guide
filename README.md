@@ -15,6 +15,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - **"Delivery attempted" but you were home:** the scan records a parcel going back on the van, not a claim that you were out — the commonest recorded reason is no access to the building. **82% were delivered anyway**, 44% within 24 hours and 89% within a week. → [guide](guides/delivery-attempted-what-it-means.md)
 - **Amazon number starting TBA says "not found":** it is a reference issued inside Amazon's own network and tied to the order, not a public carrier barcode — about 96% of Amazon Shipping references take that form. Track it in Your Orders. → [guide](guides/amazon-tba-tracking-number.md)
 - **Who do I contact — seller, carrier or the tracking site?** The seller bought the shipping, so the contract and nearly every remedy sit with them; carriers usually will not open a claim for a recipient. → [guide](guides/who-to-contact-parcel-problem.md)
+- **"Out for delivery" for days:** the scan normally means today (median **6.5 hours** to delivery) but **1 in 6 runs past 24 hours** and **1 in 7 gets a second out-for-delivery scan** - a failed attempt hiding under the same headline. → [guide](guides/out-for-delivery-for-days.md)
 - **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
 
 ## Guides
@@ -34,6 +35,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - [How to Track Packages in Google Sheets Automatically](guides/track-packages-in-google-sheets.md) — Put tracking numbers in a Google Sheet and have delivery statuses written back automatically, for every carrier, without formulas or Zapier.
 - [Your Parcel Arrived in Your Country — Who Delivers It Now?](guides/parcel-arrived-in-your-country.md) — What "arrived at transit node, awaiting distribution" means, why one order has two tracking numbers with two different clocks, whether the original number keeps updating after the handover, and how long it takes from the last transit scan to your door.
 - ["Delivery Attempted" — What It Actually Records, and What Happens Next](guides/delivery-attempted-what-it-means.md) — What a failed-delivery scan really means, the reason that shows up more than any other, how long parcels actually take to arrive after one, how often a second attempt happens, and the four phrases that mean you must act today.
+- ["Out for Delivery" for Days: What That Status Actually Promises](guides/out-for-delivery-for-days.md) — What the scan really promises, per-carrier dwell times showing the same three words mean different things, the failed attempt hiding under an unchanged status, and when to stop waiting.
 - [Amazon Tracking Numbers: Why "TBA…" Says Not Found Everywhere Else](guides/amazon-tba-tracking-number.md) — What a TBA reference actually is, why third-party trackers cannot resolve it, the other shapes that appear on Amazon orders and where each one can be tracked, and why an Amazon van can deliver a parcel from a shop with no Amazon connection.
 - [Package Tracking API: How to Add Multi-Carrier Tracking to Your App or AI Agent](guides/package-tracking-api.md) — What to look for in a multi-carrier tracking API, how register-and-webhook tracking works, and how to give AI assistants tracking access through MCP.
 
@@ -48,6 +50,10 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 ## Data: what happens after a failed delivery attempt
 
 [`data/delivery-attempt-outcomes.csv`](data/delivery-attempt-outcomes.csv) / [`.json`](data/delivery-attempt-outcomes.json) measure what follows a *delivery attempted* / failed-delivery scan: the share of those parcels that were still delivered, and how long the delivery took after that scan. Only parcels whose first attempt scan is at least 14 days old are counted, so the outcome is settled. Overall: **82% were delivered in the end**, a median of about 27 hours after the attempt — 44% within 24 hours, 65% within 48, 89% within a week. Only 22% ever show a second attempt scan and 9% a third. Domestic carriers retry fastest (DHL and USPS about a day); cross-border routes take longer because an attempt is often followed by a handover to a local company rather than a retry. Shares and percentiles only. CC BY 4.0. Measured 2026-09-25.
+
+## Data: how long "out for delivery" actually lasts
+
+[`data/out-for-delivery-dwell.csv`](data/out-for-delivery-dwell.csv) · [JSON](data/out-for-delivery-dwell.json) — hours from the first out-for-delivery scan to the delivery scan, per carrier, delivered parcels only. Overall median 6.5h; 16.7% are still out after 24 hours; 14.3% receive a second out-for-delivery scan. One cross-border carrier posts the scan so early that 65% of its parcels are still out at 24 hours. CC BY 4.0.
 
 ## Data: carrier transit times
 
