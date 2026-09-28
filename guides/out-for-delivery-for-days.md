@@ -16,18 +16,22 @@ to the delivery scan:
 
 | | |
 |---|---|
-| Median | **6.5 hours** |
-| 80th percentile | 19.4 hours |
-| 90th percentile | 32.9 hours |
-| Still not delivered after 24h | **16.7%** (about 1 in 6) |
-| Still not delivered after 48h | 7.3% |
-| Still not delivered after 72h | 4.6% |
-| Parcels with **more than one** out-for-delivery scan | **14.3%** (about 1 in 7) |
-| Parcels with three or more | 3.3% |
+| Median | **about 6 hours** |
+| 80th percentile | about 9 hours |
+| Still not delivered after 24h | **about 5%** (roughly 1 in 20) |
+| Parcels with **more than one** out-for-delivery scan | **about 2.5%** (roughly 1 in 40) |
 
-So the typical parcel really does arrive the same working day. Three days is unusual — but one in six
-runs past 24 hours and one in seven goes out on the van more than once, so it is nowhere near rare
-enough to mean the parcel is lost.
+So the typical parcel really does arrive the same working day, and a parcel that is still out after a
+full day is the exception rather than the rule. Three days is unusual — but a second attempt the next
+morning is far and away the most likely explanation, so it is nowhere near rare enough to mean the
+parcel is lost.
+
+> **How to read these two tables.** The figures above are **per parcel**, and that pool is dominated by
+> domestic US volume, so they describe a typical *parcel* rather than a typical *carrier*. The per-carrier
+> table further down is the one to judge your own parcel against: on the slowest lanes in the set, two
+> thirds of parcels are still "out for delivery" a day after the scan. An earlier version of this page
+> reported the per-carrier average (6.5 hours, 1 in 6, 1 in 7) in this first table, which overstated how
+> often a *parcel* runs past a day; corrected 2026-09-28.
 
 ## The three reasons it sticks
 
@@ -63,7 +67,7 @@ Measured the same way, per carrier:
 
 | Carrier | Median to delivery | 90th percentile | Still out after 24h |
 |---|---|---|---|
-| USPS | 4.1h | 8.7h | 5% |
+| USPS | ~6h | 8.7h | ~4% |
 | Austrian Post | 4.0h | 31.1h | 14% |
 | GOFO | 7.0h | 16.3h | 5% |
 | UniUni | 6.4h | 26.7h | 12% |
