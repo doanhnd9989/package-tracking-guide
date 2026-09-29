@@ -58,6 +58,24 @@ On 24hTrack data for shipments tracked between March and August 2026, the median
 
 Full figures by carrier, including the 80th percentile, are on the carrier statistics page: www.24htrack.com/carrier-statistics.
 
+## Read the last scan, not the date
+
+Counting days tells you how impatient you are. The *type* of the last scan tells you whether the silence is ordinary and who, if anyone, can act on it.
+
+| Last scan says | What the silence means | What to do |
+|---|---|---|
+| Departed / left facility, still in the origin country | The parcel is on a linehaul or a flight. Nothing is handled, so nothing is scanned. This is where the longest gaps in the whole journey occur. | Wait. |
+| Arrived at destination country / import / customs clearance | It is in the country, queued for clearance. Silence is normal here **unless** you were asked for duties, tax or a document. | Check email and spam for a duties or documents request. Nothing moves until that is answered. |
+| A depot or sorting centre in your own country | The remaining leg is short, so a long gap here is the one that is genuinely odd. | As a rule of thumb, if it is more than about a week old with nothing after it, ask the seller to open an investigation. |
+| Handed over to local partner / transferred | The first carrier no longer has the parcel and will never add another line. A second company has it, sometimes under a different number. | Track the destination carrier too, or use a tracker that reads both legs. |
+| No scan at all, ever | Usually a label that was printed but not yet handed over, or you are holding an order number rather than a tracking number. | Confirm with the seller which number is the carrier's. |
+
+## "The seller says they don't know either"
+
+This is a common dead end, and the seller is usually telling the truth: they open the same tracking page you do and see the same scans. They are not withholding a better screen.
+
+What they hold that you do not is the **contract**. They paid for the shipment, so they are the carrier's customer; most carriers will not open an investigation for a recipient. So you still go back to the seller — not for information, but to have them open a claim or investigation. That is the part only they can start.
+
 ## What to do
 
 - Open the full scan history to see the last place and date, not just the status.
@@ -74,6 +92,14 @@ Domestic parcels usually update every 1 to 2 days. International parcels can go 
 ### Does no tracking update mean my package is lost?
 
 Usually not. Most quiet parcels are between scan points. It is worth contacting the seller when the silence is much longer than normal for the route, for example more than 2 weeks on an international shipment.
+
+### The seller says they have no more information. Now what?
+
+Ask them to open an investigation with the carrier rather than asking them for an update. They see the same scans you do, but they hold the shipping contract, and carriers generally only accept claims from the sender.
+
+### Is a quiet tracking page the same as a lost parcel?
+
+No. A tracking page is a log of scans, not a live location. A gap means nobody has handled the parcel recently, which is expected on flights, sea legs and in customs queues.
 
 ### How do I get notified when tracking finally updates?
 

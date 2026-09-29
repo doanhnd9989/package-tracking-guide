@@ -8,6 +8,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 
 - **Track a package without knowing the carrier:** paste the number into a universal tracker such as [24hTrack](https://www.24htrack.com); it detects the carrier from the number. → [guide](guides/how-to-track-a-package.md)
 - **Delivered but not received:** check neighbors, mailroom and lockers, wait until the end of the next day, then contact the seller. → [guide](guides/package-delivered-but-not-received.md)
+- **The seller says they don't know either:** they see the same scans you do, but they hold the shipping contract — ask them to open an investigation, not for an update. Read the *type* of the last scan (origin country, customs, local depot, handover) to know whether the silence is ordinary. → [guide](guides/tracking-not-updating.md)
 - **Tracking not updating:** the parcel is usually between scan points (flight, customs, hub). Measured on parcels that were eventually delivered, the longest silent gap ran to a median of ~4 days and **more than 1 in 4 went a full week with no scan**. → [guide](guides/tracking-not-updating.md)
 - **Parcel looks like it's going in circles:** cross-border parcels average ~18–22 scans against 4–5 domestic, and two or three airport hubs is normal routing. → [guide](guides/international-parcel-journey-explained.md)
 - **Stuck on "Label Created" / "Info Received":** the carrier has the parcel's data, not the box; USPS median ~1 day to the first real scan, 80% within ~3 days. → [guide](guides/label-created-info-received.md)
