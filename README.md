@@ -23,6 +23,8 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - **Which carrier is this number?** 1Z = UPS · 20–22 digits starting 92–95 = USPS · 12/15 digits = often FedEx · 2 letters + 9 digits + country code = international post. → [guide](guides/tracking-number-formats.md)
 - **Never heard of the carrier on my parcel — who are they?** On a cross-border order the seller picks the carrier, so the name is often a business-to-business shipper that never advertises to shoppers. Search the number, not the name: some courier names are shared by two different companies (CTT is the Portuguese post; CTT Express is a Spanish courier). → [guide](guides/carrier-name-collisions.md)
 
+- **A courier is asking for cash at the door:** that's cash on delivery, normal across the Gulf, much of Africa and South-East Asia — match the amount against your order confirmation, pay the courier (never a link or QR code), and refuse if it matches nothing you bought. → [guide](guides/cash-on-delivery-parcel.md)
+
 ## Guides
 
 - [Seller, carrier or tracking site: who actually fixes a parcel problem](guides/who-to-contact-parcel-problem.md)
@@ -46,6 +48,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - ["Out for Delivery" for Days: What That Status Actually Promises](guides/out-for-delivery-for-days.md) — What the scan really promises, per-carrier dwell times showing the same three words mean different things, the failed attempt hiding under an unchanged status, and when to stop waiting.
 - [Chinese Tracking Scans: What 已妥投, 离开处理中心 and the Rest Actually Mean](guides/chinese-tracking-scan-meanings.md) — A glossary of the Chinese scan phrases that appear on parcels shipped from China, in the order you meet them, plus how to read the silence between them and what to do when 已妥投 appears and nothing arrived.
 - [Amazon Tracking Numbers: Why "TBA…" Says Not Found Everywhere Else](guides/amazon-tba-tracking-number.md) — What a TBA reference actually is, why third-party trackers cannot resolve it, the other shapes that appear on Amazon orders and where each one can be tracked, and why an Amazon van can deliver a parcel from a shop with no Amazon connection.
+- [The Driver Wants Cash: telling a real cash-on-delivery parcel from a scam](guides/cash-on-delivery-parcel.md) — What COD actually is and which markets use it, the four signs the person at your door is not delivering your order, why customs duty is a separate bill, and why no tracking page can tell you the amount you owe.
 - [Package Tracking API: How to Add Multi-Carrier Tracking to Your App or AI Agent](guides/package-tracking-api.md) — What to look for in a multi-carrier tracking API, how register-and-webhook tracking works, and how to give AI assistants tracking access through MCP.
 
 ## Data: how long parcels go without a scan
