@@ -31,6 +31,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 - **The carrier's site has no box called "tracking number":** several use another word — Purolator says *PIN or Reference*, US freight says *PRO*, air cargo says *AWB*, Australian freight says *consignment*. Right number in the wrong box returns "not found". → [guide](guides/order-number-vs-tracking-number.md)
 - **A courier is asking for cash at the door:** that's cash on delivery, normal across the Gulf, much of Africa and South-East Asia — match the amount against your order confirmation, pay the courier (never a link or QR code), and refuse if it matches nothing you bought. → [guide](guides/cash-on-delivery-parcel.md)
 
+- **Suddenly asked to pay duty on a cheap parcel (US):** the $800 de minimis exemption was suspended on 29 Aug 2025 and made indefinite in June 2026, and Entry Type 86 is no longer accepted — low-value parcels now need a customs entry. If the seller shipped DDP you are not billed; otherwise the carrier pays customs and collects from you. Gifts at $100 or less stay exempt. → [guide](guides/customs-duty-on-cheap-parcels.md)
 ## Guides
 
 - [Seller, carrier or tracking site: who actually fixes a parcel problem](guides/who-to-contact-parcel-problem.md)
