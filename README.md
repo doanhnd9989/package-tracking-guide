@@ -7,6 +7,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 ## Quick answers
 
 - **Track a package without knowing the carrier:** paste the number into a universal tracker such as [24hTrack](https://www.24htrack.com); it detects the carrier from the number. → [guide](guides/how-to-track-a-package.md)
+- **My tracking page is completely blank — is the parcel lost?** → [Why a tracking page comes back blank](guides/why-tracking-page-is-blank.md)
 - **The carrier's name is spelled several ways (OnTrac / "on trac", Cainiao / "cai niao", YTO / Yuantong):** one company can have several correct names; the tracking number is the stable identifier, not the name. → [guide](guides/carrier-name-spellings.md)
 - **Delivered but not received:** check neighbors, mailroom and lockers, wait until the end of the next day, then contact the seller. → [guide](guides/package-delivered-but-not-received.md)
 - **The seller says they don't know either:** they see the same scans you do, but they hold the shipping contract — ask them to open an investigation, not for an update. Read the *type* of the last scan (origin country, customs, local depot, handover) to know whether the silence is ordinary. → [guide](guides/tracking-not-updating.md)
@@ -38,6 +39,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 ## Guides
 
 - ["Delivered" on a date before you ordered: why a stranger's delivery shows under your number](guides/delivered-before-you-ordered.md) — The ten-second date test, why tracking numbers carry old history, and why two sites disagree about one parcel.
+- [Why a Tracking Page Comes Back Blank (97% vs 1 in 5)](guides/why-tracking-page-is-blank.md)
 - [Seller, carrier or tracking site: who actually fixes a parcel problem](guides/who-to-contact-parcel-problem.md)
 - [Your parcel is "returning to sender": the four causes and which one hit you](guides/parcel-returning-to-sender.md) - A return is not a loss. How to read the two scans before the reversal, and what to ask the seller for.
 - ["Delivered to final mile carrier": why a delivery scan doesn't mean your parcel arrived](guides/handover-scan-delivered-to-carrier.md) — The same word covers a company-to-company handover, a parcel waiting in a shop, and a real doorstep delivery. How to tell them apart from the scan location.
