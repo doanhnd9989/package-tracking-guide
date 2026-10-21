@@ -6,6 +6,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 
 ## Quick answers
 
+- **My tracking numbers break when I put them in Excel:** a spreadsheet rounds long digit strings — a 22-digit USPS number can become `9.21E+21`, or keep its length with the last digit silently turned into `0`. Format the column as **Text before you paste**. → [guide](guides/spreadsheet-breaks-tracking-numbers.md)
 - **Track a package without knowing the carrier:** paste the number into a universal tracker such as [24hTrack](https://www.24htrack.com); it detects the carrier from the number. → [guide](guides/how-to-track-a-package.md)
 - **I ordered from China but tracking only shows cities in my own country — is it the wrong number?** → [Ordered from China, but tracking only shows local cities](guides/overseas-warehouse-tracking.md)
 - **My tracking page is completely blank — is the parcel lost?** → [Why a tracking page comes back blank](guides/why-tracking-page-is-blank.md)
@@ -41,6 +42,7 @@ Maintained by [24hTrack](https://www.24htrack.com), a free multi-carrier package
 
 ## Guides
 
+- [Your Spreadsheet Is Quietly Breaking Your Tracking Numbers](guides/spreadsheet-breaks-tracking-numbers.md) — Why all-digit formats (USPS 22-digit, FedEx 15) get rounded while `1Z` and S10 numbers survive, the silent last-digit-to-zero failure, and three formulas to audit a column you already have.
 - [Three Scans or Twenty-Five? What the Number of Tracking Updates Means](guides/how-many-tracking-scans.md) — Scan count measures handovers, not quality: a ~6-scan lane delivers in a median of 1 day while a ~25-scan lane takes 8. Measured counts by shipping model, why the gaps are flights and customs, and the three questions to read instead.
 - ["Delivered" on a date before you ordered: why a stranger's delivery shows under your number](guides/delivered-before-you-ordered.md) — The ten-second date test, why tracking numbers carry old history, and why two sites disagree about one parcel.
 - [Why a Tracking Page Comes Back Blank (97% vs 1 in 5)](guides/why-tracking-page-is-blank.md)
