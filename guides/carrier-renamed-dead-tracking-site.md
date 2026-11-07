@@ -51,6 +51,29 @@ Every step like that leaves old labels, old dispatch emails and old links pointi
 - Treat `carrier` as an **editable field on the shipment**, not a constant written at order creation. Rebrands, acquisitions and last-mile handovers all change it after the fact.
 - Expect **several spellings of the same network** in your data, and normalise them before you report on carrier performance.
 
+## When the brand merges but the tracking systems don't: FedEx and TNT
+
+A rename is one problem. A **merger where the tracking systems stay separate** is a different one, and it produces the same symptom: a real number that returns nothing.
+
+FedEx acquired TNT in 2016. Today tnt.com carries FedEx's own intellectual-property notice and the line *"TNT will become FedEx"*. It is reasonable to conclude from that that a TNT number is now a FedEx number. It is not — and TNT's own customer FAQ still states it plainly:
+
+> "FedEx shipments can be tracked at fedex.com, and TNT consignment tracking is available at tnt.com."
+
+One group, two tracking tools. Paste a TNT consignment number into FedEx tracking and you will usually get nothing back, which looks exactly like a lost parcel.
+
+| | |
+|---|---|
+| What changed | Ownership: FedEx acquired TNT in 2016 |
+| What did **not** change | The tracking systems. TNT consignments are still looked up with TNT's tool |
+| TNT consignment number | TNT's own tracking help describes 8-9 digits, no letters |
+| Known quirk | TNT states those 8-9 digit numbers "get reused every three or four weeks" |
+
+### TNT is not Team Global Express
+
+These two get mixed up constantly, and this page discusses both, so it is worth being explicit: **Team Global Express is not a renamed TNT.** Its own About page says it began as Team Global Express following its acquisition from **Toll Group**, and traces its heritage to Albert F Toll's 1888 transport business. TNT Australia's own site, meanwhile, still trades as TNT and carries a property notice in the name of TNT Holdings B.V.
+
+They are separate carriers that both move freight in Australia. Each one's tracking only finds its own consignments, so the first thing to check is which name is actually printed on the consignment note.
+
 ## See also
 
 - [Carrier Name Collisions: When Two Couriers Share a Name](carrier-name-collisions.md)
