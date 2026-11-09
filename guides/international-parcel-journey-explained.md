@@ -56,6 +56,43 @@ The parcel is fine. The **tracking page** is the thing that ended. The remaining
 
 This is the main practical reason to use a universal tracker: [24hTrack](https://www.24htrack.com) detects the carrier from the number and keeps following the parcel past that handover, so both legs appear as one timeline. It is free and needs no account.
 
+### Decoding "office of exchange"
+
+Postal-network parcels describe the border in words almost nobody uses in daily life, and the lines look alarming when they are simply bookkeeping:
+
+| What you see | What it means |
+|---|---|
+| Arrival at **outward** office of exchange | Reached the facility that hands post *out* of the sending country |
+| Departure from **outward** office of exchange | Left that facility — the handover finished |
+| Arrival at **transit** office of exchange | Reached a country your parcel only passes *through* |
+| Arrival at **inward** office of exchange | Reached the facility that takes post *into* your country |
+
+An office of exchange is just the building where two countries' postal systems hand items over. Seeing an *arrival* and then a *departure* at the same office is the pair you want: it means the step completed. None of these lines is a problem report, and none of them means your parcel changed direction.
+
+### The same scan listed twice is one scan, not two
+
+Some operators publish every event in more than one language — an English line and a line in the destination country's script, carrying the same timestamp. A tracking page that shows you what the operator published will therefore show both.
+
+Count the timestamps, not the rows. If two rows share a minute and a facility, that is one event written out twice. It is worth knowing before you conclude your parcel bounced through sorting twice as often as it really did.
+
+### A freight forwarder's number is not a courier's number
+
+Step 8 above describes one carrier handing to another. There is a second, less obvious case: the number you were given was never a courier's number to begin with.
+
+A **freight forwarder** arranges carriage — it books space on a ship or aircraft, consolidates many sellers' goods into one load, and handles export paperwork. It does not deliver to your door. Its tracking therefore records *the job*, not the parcel:
+
+- **Order placed** — the booking exists
+- **Goods received** — the forwarder physically holds the cargo
+- **Dispatched** — the cargo has left the origin country
+
+Three or four milestones is a *complete* forwarder record, not a truncated one, and those milestones are often published in the forwarder's own language because they are written for the business that booked the freight rather than for the person waiting at home. The record then ends when the cargo reaches your country and a domestic carrier takes over.
+
+How to tell which kind of number you hold:
+
+- A forwarder reference is usually short and irregular — it does not follow a fixed international pattern, because it is a job number rather than a postal barcode.
+- If the history is three lines long, has no depot or door scans, and has not changed in weeks, ask the seller for **the last-mile carrier's number**. That is the one that carries a delivery date.
+- If your seller shipped by sea rather than air, weeks of mid-journey silence is the shape of the trip, not a fault in it.
+
 ## How to tell "slow but normal" from "worth chasing"
 
 Use the spread, not the average. Here is the same dataset showing the median alongside the 80th percentile — the point where only one parcel in five takes longer:
