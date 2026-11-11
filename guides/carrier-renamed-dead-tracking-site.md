@@ -74,6 +74,55 @@ These two get mixed up constantly, and this page discusses both, so it is worth 
 
 They are separate carriers that both move freight in Australia. Each one's tracking only finds its own consignments, so the first thing to check is which name is actually printed on the consignment note.
 
+## When the brand merges and the scans change name mid-journey: Yodel and InPost
+
+The FedEx/TNT case above is a merger where the tracking systems stayed apart. The opposite case is
+worth knowing too, because it produces a very different and much more alarming symptom: the number
+keeps working, and the **brand inside your scan history changes halfway down**.
+
+Yodel, one of the UK's larger parcel carriers, is the live example. Its own site now trades as
+**Yodel by InPost** and carries a banner telling customers that tracking has moved to InPost,
+pointing them at inpost.co.uk and the InPost app. The legal entity behind the site is InPost
+Delivery Network Limited.
+
+What that does to a scan list is the part nobody warns you about. A typical history on a Yodel
+number opens in Yodel's own voice at a national hub, moves to a local site written as a service
+centre, and then switches wording entirely:
+
+```
+HATFIELD TERMINAL             your parcel is at our national hub
+LUTTERWORTH                   your parcel is at our national hub
+BIRMINGHAM SERVICE CENTRE     your parcel has arrived at your delivery depot
+INPOST                        your parcel is on its way to InPost
+INPOST                        we have your parcel
+INPOST                        your parcel has been dropped off at the locker
+```
+
+Nothing has gone wrong there and the number has not been reused. It is one parcel, one number, and
+one company that now has two names on it.
+
+| | |
+|---|---|
+| What changed | Ownership and branding: InPost acquired Yodel; the site trades as Yodel by InPost |
+| What did **not** change | Your number. A Yodel number issued before the change still tracks |
+| Yodel number format | 3 letters followed by 16 digits, 19 characters in total; a minority are 2 letters and 16 digits |
+| Where it now resolves | Yodel's own site directs tracking to inpost.co.uk and the InPost app |
+| Common misreading | Seeing "InPost" and concluding the parcel was handed to a random third party |
+
+### Two practical consequences
+
+**For recipients.** A line naming an InPost locker or an InPost Shop is not a delay — it is a
+collection, and the code is in your email or the app. Read the place name rather than the clock: a
+record resting at a national hub is still in the trunk network and a quiet day there is normal,
+while a record at a local service centre means the town that delivers it already has it.
+
+**For anyone storing this data.** If your system holds one carrier string per shipment, this breaks
+it. The company that *issued* the number and the company *handling it right now* are different
+questions, and a rebrand changes the second without touching the first. Keep an alias table that
+maps `Yodel`, `Yodel by InPost` and InPost-worded scans on a Yodel number to one operator, or your
+per-carrier delivery times and exception rates will quietly split across two labels and the carrier
+will look like it lost half its volume overnight.
+
 ## See also
 
 - [Carrier Name Collisions: When Two Couriers Share a Name](carrier-name-collisions.md)
