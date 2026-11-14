@@ -1,4 +1,4 @@
-# One carrier, several spellings: OnTrac, Cainiao, Straightship, YTO
+# One carrier, several spellings: Jetspeed, OnTrac, Cainiao, Straightship, YTO
 
 Some carriers are hard to track because nobody knows who they are. These four are hard to track for the opposite reason: people know exactly who they are and still cannot spell them.
 
@@ -21,6 +21,35 @@ All details below come from each company's own website.
 
 Note the fourth row: the people spelling it "wrong" are right. Yuantong is the English spelling of the company's Chinese name; YTO is the abbreviation it uses abroad. Both are correct names for the same carrier. In Australia the same operation also appears written as **AU-YTO**.
 
+## The extreme case: a spelling that beats the real name
+
+The four above are carriers people misspell. There is a fifth case that goes further, where the
+misspelling has almost completely replaced the name.
+
+The carrier is **Jetspeed** — Jetspeed Express International Logistics Co., Ltd., a logistics
+company based in China. Its own site lists express delivery, freight forwarding, cargo transport,
+warehousing and cross-border e-commerce support, covering the mainland Chinese provinces along
+with Hong Kong, Macau and Taiwan, with air and sea routes onward to major cities.
+
+Almost everybody looking for it searches for **"JetScope"**. On the page we run for this carrier,
+**99.6% of arriving searches are spelled that way**; well under one percent contain "speed".
+
+There is no company called JetScope. It is purely how the name is heard and retyped by people who
+received it in a seller's message rather than printed by the carrier. The practical damage is that
+searching the misheard name returns no website, no tracking page and no phone number — so a
+reasonable person concludes the courier is invented and the parcel is a scam, when the reference
+was good the whole time.
+
+Two things make this one worth knowing:
+
+**The number shape is unusually reliable.** About 99% of these references are the letters **JSD**
+followed by twelve digits — fifteen characters in total. That is enough to identify the carrier
+without ever resolving the name.
+
+**There is a same-name trap.** Jetspeed Logistics Pvt Ltd in India is an unrelated company that
+happens to share the name. It is possible to search hard, find the "wrong right" company, and end
+up reading an Indian domestic courier's FAQ about a parcel leaving China.
+
 ## Why carrier names are so slippery
 
 Three reasons, none of which is your fault:
@@ -35,6 +64,7 @@ Sometimes. It is worth knowing which case you are in, because the answer changes
 
 | Carrier | Shape | Reliable enough to go on? |
 |---|---|---|
+| Jetspeed | **JSD** then 12 digits, 15 characters total | Yes — about 99% of references use it |
 | Straightship | Five letters then 13 digits, 18 characters total; most begin **STRCA** | Yes — one shape dominates what we see |
 | OnTrac | Mixed. Some start with **D**, many are all digits | No — treat shape as a hint only |
 | YTO Express | Mixed. Several prefixes in regular use | No |
@@ -57,6 +87,10 @@ One moment: when something has gone wrong and you need a human.
 Even then, the carrier is usually not the party to contact. The shipping contract belongs to the seller who booked the shipment, not to you, so they are the one who can open a trace or send a replacement. What you want to carry into that conversation is not the carrier's name — it is the number, the time of the last scan, and the place it happened. See [who-to-contact-parcel-problem.md](who-to-contact-parcel-problem.md).
 
 ## FAQ
+
+**Is JetScope a real courier?**
+No. There is no company of that name. The operator is Jetspeed, and "JetScope" is how the name is
+commonly misheard. A reference beginning JSD is a Jetspeed reference.
 
 **Is "On Trac" a different company from OnTrac?**
 No. Same carrier, two spellings, and only one of them is the company's own.
